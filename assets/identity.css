@@ -1,0 +1,53 @@
+/* Portable identity foundation. Apply data-theme="dark" to any surface. */
+:root {
+  color-scheme: light;
+  --midnight: #172630;
+  --paper: #F1EFE7;
+  --sage: #667C73;
+  --copper: #D18B58;
+  --survey-blue: #8BA9B7;
+  --bg: var(--paper);
+  --ink: var(--midnight);
+  --muted: #52635C;
+  --accent: #9B582E;
+  --line: #C8CDC2;
+  --surface: #E7E9DF;
+  --focus: #854822;
+  --font-sans: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+}
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: var(--midnight);
+  --ink: var(--paper);
+  --muted: #B5C6CC;
+  --accent: #E2A577;
+  --line: #435965;
+  --surface: #1C303B;
+  --focus: #E2A577;
+  --symbol-bg: var(--midnight);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-sans); font-size: 1rem; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-underline-offset: .25em; }
+a:focus-visible { outline: 3px solid var(--focus); outline-offset: 6px; }
+::selection { background: #D18B5855; }
+img, svg { max-width: 100%; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { font-weight: 500; line-height: 1.1; letter-spacing: -.045em; }
+.eyebrow { color: var(--muted); font-family: var(--font-mono); font-size: .66rem; line-height: 1.5; letter-spacing: .13em; text-transform: uppercase; }
+.wordmark { font-size: 1.35rem; letter-spacing: -.055em; font-weight: 600; }
+.brand-dot { color: var(--accent); }
+.text-link { display: inline-flex; align-items: center; gap: 1.5rem; min-height: 44px; font-size: .9rem; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--accent); }
+.text-link:hover { color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }

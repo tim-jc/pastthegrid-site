@@ -3,10 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Past the Grid</title>
+  <meta name="description" content="A personal collection of projects exploring cycling, geography, data and the systems that connect them. Step into Past the Grid.">
+  <meta name="theme-color" content="#F1EFE7">
+  <title>Past the Grid — Exploration, data & the spaces between</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/identity.css">
+  <link rel="stylesheet" href="assets/home.css">
 </head>
 <body>
-  <h1>Past the Grid</h1>
-  <p>A home for personal projects in data, technology, and exploration.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Past the Grid home"><img src="assets/symbol.svg" width="40" height="40" alt=""><span class="wordmark">Past the Grid<span class="brand-dot">.</span></span></a>
+      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About</a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="intro-heading">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-cross" aria-hidden="true">+</span> A personal field notebook</p>
+          <h1 id="intro-heading">Exploration, data,<br>and the spaces<br><span>between.</span></h1>
+          <p class="intro">A collection of projects exploring cycling, geography, data and the systems that connect them.</p>
+          <a class="text-link" href="#projects">Explore the projects <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-map" aria-hidden="true">
+          <img src="assets/field-map.svg" width="680" height="520" alt="">
+          <div class="map-caption"><span>FIG. 01 / A ROUTE THROUGH THE GRID</span><span>SCHEMATIC</span></div>
+        </div>
+      </section>
+      <section id="projects" class="projects" aria-labelledby="projects-heading">
+        <div class="section-heading"><div><p class="eyebrow">01 / In the field</p><h2 id="projects-heading">Follow a different line.</h2></div><p>Two projects. A shared curiosity.</p></div>
+        <div class="project-grid">
+          <article class="project-card coastal-card" aria-labelledby="coastal-title">
+            <div class="card-art coastal-art" aria-hidden="true"><span class="art-label">FIELD NOTES / COASTLINE</span>
+              <svg viewBox="0 0 560 210" fill="none"><g stroke="currentColor" stroke-width="1" opacity=".3"><path d="M-20 50Q60 0 125 65T245 90 350 105 460 155 580 145M-20 72Q60 22 125 87T245 112 350 127 460 177 580 167M-20 94Q60 44 125 109T245 134 350 149 460 199 580 189M-20 116Q60 66 125 131T245 156 350 171 460 221 580 211M-20 138Q60 88 125 153T245 178 350 193 460 243 580 233"/></g><path d="M-10 28Q60-22 125 43T245 68 350 83 460 133 580 123" stroke="currentColor" stroke-width="1.5"/><path d="M95 22l30 21 28 29 40 11 52-15 41-13 34 15 30 13 40 7 30 26 40 17" stroke="#9B582E" stroke-width="2.5" stroke-dasharray="4 5"/><circle cx="245" cy="68" r="5" fill="#F1EFE7" stroke="#9B582E" stroke-width="2"/></svg>
+              <span class="art-foot">LAND <span>↔</span> SEA</span>
+            </div>
+            <div class="card-body"><p class="eyebrow">Geography / Exploration</p><h3 id="coastal-title">Coastal<span aria-hidden="true">↗</span></h3><p>Tracing the edge of the map. Exploring the coastline and mapping progress along the way.</p><div class="card-actions"><a class="card-cta" href="https://coastal.pastthegrid.uk">Explore Coastal <span aria-hidden="true">→</span></a><a class="source-link" href="https://github.com/tim-jc/coastal" aria-label="View source on GitHub for Coastal">View source on GitHub</a></div></div>
+          </article>
+          <article class="project-card cycling-card" data-theme="dark" aria-labelledby="cycling-title">
+            <div class="card-art cycling-art" aria-hidden="true"><span class="art-label">ROUTE NOTES / CYCLING</span>
+              <svg viewBox="0 0 560 210" fill="none"><g stroke="#8BA9B7" opacity=".22"><path d="M0 50h560M0 100h560M0 150h560M70 0v210M140 0v210M210 0v210M280 0v210M350 0v210M420 0v210M490 0v210"/></g><path d="M-10 175l55-16 35 5 36-44 30 12 46-46 28 18 46-42 35 21 40-36 46 30 33-19 45 33 65-12" stroke="#8BA9B7" stroke-width="1" opacity=".5"/><path d="M45 159l35 5 36-44 30 12 46-46 28 18 46-42 35 21 40-36 46 30 33-19" stroke="#D18B58" stroke-width="2.5" stroke-linejoin="round"/><g fill="#172630" stroke="#D18B58" stroke-width="2"><circle cx="45" cy="159" r="5"/><circle cx="420" cy="58" r="5"/></g></svg>
+              <span class="art-foot">ON THE ROAD / IN THE DATA</span>
+            </div>
+            <div class="card-body"><p class="eyebrow">Cycling / Analysis</p><h3 id="cycling-title">Cycling<span aria-hidden="true">↗</span></h3><p>Another way to read a ride. Exploring cycling through data and analysis.</p><div class="card-actions"><a class="card-cta" href="https://cycling.pastthegrid.uk">Explore Cycling <span aria-hidden="true">→</span></a><a class="source-link" href="https://github.com/tim-jc/cycling-analytics" aria-label="View source on GitHub for Cycling">View source on GitHub</a></div></div>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="about" aria-labelledby="about-heading">
+        <div><p class="eyebrow">02 / Behind the notebook</p><h2 id="about-heading">Out there.<br>Connected here.</h2></div>
+        <div class="about-copy"><p>Past the Grid is a home for my interests in cycling, exploration, and data. Some projects begin with a ride or a place; others with a question about how things work.</p><p>The code is public on GitHub for anyone curious about how it works.</p><span class="notebook-signoff"><span aria-hidden="true">↗</span> Always a little further to go.</span></div>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="footer-brand" href="./">Past the Grid<span class="brand-dot">.</span></a><p>Exploration, data &amp; the spaces between.</p><nav aria-label="Footer navigation"><a href="https://coastal.pastthegrid.uk">Coastal</a><a href="https://cycling.pastthegrid.uk">Cycling</a><a href="https://github.com/tim-jc">GitHub</a><a href="privacy.html">Privacy notice</a></nav></footer>
+  </div>
 </body>
 </html>
