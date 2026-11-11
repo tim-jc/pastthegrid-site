@@ -81,3 +81,9 @@ h3 span { color: var(--accent); font-size: 1.6rem; transition: transform .2s; }
   .about { grid-template-columns: 1fr; gap: 26px; padding: 34px 0 40px; }
   .site-footer nav { margin-left: 0; flex-basis: 100%; flex-wrap: wrap; }
 }
+
+/* Text-sized directional marks avoid platform emoji substitution. */
+.direction-icon { display: inline-block; width: .95em; height: 1em; vertical-align: -.125em; }
+.text-link .direction-icon { width: .92em; }
+.notebook-signoff .direction-icon { width: .6em; }
+.art-foot .direction-icon { position: static; inset: auto; width: .72em; height: 1em; }
